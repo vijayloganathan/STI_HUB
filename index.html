@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SONA STI Hub</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/icon.png" rel="icon">
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+    
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- ======= Top Bar ======= -->
+<div id="topbar" class="d-flex align-items-center" style="background-color: rgba(41,66,112,255);">
+  <div class="container-fluid d-flex justify-content-between">
+    <div class="contact-info d-flex align-items-center">
+      <img src="assets/img/icon.png" class="headimg">
+      
+    </div>
+    
+    <h3 class="topbarcontent">Science Technology and Innovation Hub for livelihood enhancement of SC community in Omalur and Kadayampatti Blocks, Salem District, TamilNadu.</h3>
+      
+    <div class="contact-info d-flex align-items-center">
+      <img src="assets/img/sona.png" class="headimg">
+    </div>
+  </div>
+  
+</div>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top header">
+  <div class="container-fluid d-flex align-items-center">
+
+    <h1 class="logo me-auto"><a href="#">Science Technology & Innovation</a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#about">About STI Hub</a></li>
+        <li><a class="nav-link scrollto" href="#services">Intervention</a></li>
+        <li><a class="nav-link scrollto" href="#event">Events</a></li>
+        <li><a class="nav-link scrollto" href="#portfolio">Gallery</a></li>
+        <li><a class="nav-link scrollto" href="#cta">Team</a></li>
+        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+  </div>
+</header><!-- End Header -->
+
+
+
+  <main id="main" style="display: block;">
+
+      <!-- ======= Home ======= -->
+<section id="hero" class="d-flex align-items-center justify-content-center">
+  <div class="info d-flex align-items-center">
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250" id="eventplan">
+
+      </div>
+  </div>
+  <div id="heroCarousel" class="carousel slide carousel-fade col-lg-12" data-ride="carousel" data-interval="5000">
+    <div class="carousel-inner" id="displayhero"></div>
+    
+  </div>
+</section><!-- End Hero -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About</h2>
+        </div>
+        <div class="row" style="text-align: justify;">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3 style="color: #29426f;">About Us</h3>
+            <p>Sona Group of Institutions has been established a century before, founded by Karumuttu Thiagaraj Chettiar. Focusing to lead and give a great transformative educational experience for student in India and foreign countries. He saw the plight of workers in the plantations and fought for their liberation. His idea of liberation was to set people free and even to a higher level of setting minds free through education. He set this idea in motion by establishing Thiagarajar Engineering College in Madurai, and Thiagarajar Polytechnic College, Salem, and sowed the seeds of quality technical education in India. Those seeds now stand as a global brand called ‘Sona’ whose roots run deep into education, textile, IT, research, manufacturing, outsourcing, logistics and livelihood of the communities in large.
+            </p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-left" data-aos-delay="100">
+            <h3 style="color: #29426f;">About STI Hub</h3>
+            <p>Department of Science and Technology, Ministry of Science and Technology, Govt. of India has the vision to establish Science Technology and Innovation (STI) Hubs to develop, nurture and ensure the development, improvement, and delivery of appropriate and relevant S&T approaches for Creation of Sustainable Livelihoods and enhancing the Quality of Life of the Scheduled Caste and Scheduled Tribe population in the country. </p>
+            <p>DST has sanctioned Rs.2.77 crores to Sona College of Technology for the project titled “Science Technology and Innovation Hub for livelihood enhancement of SC community in Omalur and Kadayampatti Blocks”. The project duration is 3 years.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    
+
+    <!-- ======= about Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" style="text-align: justify;">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Objective of this Project</h3>
+            <ul>
+              <li><i class="ri-check-double-line"></i> To improve the Socio-economic status of SC community through Science and Technology Interventions </li>
+              <li><i class="ri-check-double-line"></i> To provide the Marketing and Entrepreneurial Skills Developmental programme for SC community.</li>
+            </ul>
+            <h4>Expected benefits of the target groups / population</h4>
+            <ul>
+              <li><i class="ri-check-double-line"></i>Establishing STI-HUB(A common Facility centre) for the SC community.</li>
+              <li><i class="ri-check-double-line"></i>Training programmes to chrysanthemum farmers on farm mechanization practices.</li>
+              <li><i class="ri-check-double-line"></i>Workshops and training programmes on Coir pith composting technology and model farms to the SC farmers.</li>
+              <li><i class="ri-check-double-line"></i>Training programmes to SC women for generating additional income.</li>
+              <li><i class="ri-check-double-line"></i>Infrastructure for women to generate income and to establish new rural enterprises.</li>
+              <li><i class="ri-check-double-line"></i>Awareness campaigns, capacity building sessions on millet processing and producing value added products</li>
+              <li><i class="ri-check-double-line"></i>MSME Training of Trainer programmes and workshops to unemployed youth and women.</li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-left" data-aos-delay="100">
+            <div class="custom-table-container" style="font-size: 15px;">
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">S.NO</th>
+                      <th scope="col">Block Name</th>
+                      <th scope="col">Village</th>
+                      <th scope="col">Number of Beneficiaries</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td rowspan="3">01.</td>
+                      <td rowspan="3">Omalur</td>
+                      <td>Pagalpatti</td>
+                      <td rowspan="3"></td>
+                    </tr>
+                    <tr>
+                      <td>Kamalapuram</td>
+                    </tr>
+                    <tr>
+                      <td>Puliyampatti</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="3">02.</td>
+                      <td rowspan="3">Kadayampatti</td>
+                      <td>Pannapatti</td>
+                      <td rowspan="3"></td>
+                    </tr>
+                    <tr>
+                      <td>Kookuttapatti</td>
+                    </tr>
+                    <tr>
+                      <td>Deevatipatti</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+            </div>
+            <div data-aos="zoom-in">
+              <center><img src="assets/img/Map.png" alt="" class="mapimg"></center>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section><!-- End Features Section -->
+
+<!-- ======= Intervention Section ======= -->    
+<section id="services" class="departments">
+  <div class="container" data-aos="fade-left">
+    <div class="section-title">
+      <h2>Intervention</h2>
+    </div>
+    <div class="row gy-4">
+      <div class="col-lg-3">
+        <ul class="nav nav-tabs flex-column" style="border: none;" data-aos="fade-right" id="intervisionselect">
+          <!-- Your list items here -->
+        </ul>
+      </div>
+      <div class="col-lg-9">
+        <div class="tab-content" id="intervisioncontent">
+          <!-- Your content here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======= Event Section ======= -->
+<section id="event">
+  <div data-aos="fade-left">
+    <div class="container">
+      <div class="section-title">
+        <h2>Event</h2>
+      </div>
+    </div>
+    <div id="eventCarousel" class="carousel slide carousel-fade col-lg-12" data-ride="carousel" data-interval="5000">
+      <div class="carousel-inner" id="displayevent"></div>
+      <a class="carousel-control-prev" href="#eventCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#eventCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+   
+  </div>
+</section>
+
+<!-- End Hero -->
+    <!-- ======= Gallery Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active" id="allclickgal">All</li>
+              <li data-filter=".filter-app">Image</li>
+              <li data-filter=".filter-card">Video</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up"   id="inallimggall">
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <section id="testimonials" class="testimonials">
+          <div class="container">
+            <div class="section-title">
+              <h2>Team</h2>
+            </div>
+            <center><h3 style="text-decoration: underline;">Project Insepctors</h3></center>
+            
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <h3 style="font-size: 20px;text-decoration: underline;"><center>Principal Investigator</center></h3>
+                      <img src="assets/img/team/img1.png" class="testimonial-img" alt="">
+                      <h3>Dr. B. Sathyabhama. HOD</h3>
+                      <h4>Professor of Computer Science and Enginnering</h4>
+                      <h4>Sona college of Technology, Salem</h4>
+                      <p>
+                        <i class="bi-phone">+91-427-4099744, +91-427-4099888</i>
+                          <br>   
+                        <i class="bi-mailbox2"></i>
+                        <a href="mailto:sathyabhama@sonatech.ac.in" class="staffmail">sathyabhama@sonatech.ac.in</a>           
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <h3 style="font-size: 20px;text-decoration: underline;"><center>Co-Investigator</center></h3>
+                      <img src="assets/img/team/img2.png" class="testimonial-img" alt="">
+                      <h3>Dr. S. R. R. Senthilkumar</h3>
+                      <h4>Department of Civil Engineering</h4>
+                      <h4>Principal of Sona College of Technology, Salem</h4>
+                      <p>
+                        <i class="bi-phone">+91-0427-4099919, +91-427-4099888</i>
+                        <br>   
+                        <i class="bi-mailbox2"></i>
+                        <a href="mailto:principal@sonatech.ac.in" class="staffmail">principal@sonatech.ac.in</a>           
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <h3 style="font-size: 20px;text-decoration: underline;"><center>Co-Investigator</center></h3>
+                      <img src="assets/img/team/img3.png" class="testimonial-img" alt="">
+                      <h3>Dr. ir. Nirmalesh Kumar Sampathkumar</h3>
+                      <h4>Department of Mechanical Engineering</h4>
+                      <h4>Director, Vee Techologies Pvt Ltd.</h4>
+                      <h4>Sona college of Technology</h4>
+                      <p>
+                        <i class="bi-phone"> +91-427-4099744, +91-427-4099888</i>
+                         <br>   
+                        <i class="bi-mailbox2"></i>
+                        <a href="mailto:nirmaleshksk@sonatech.ac.in" class="staffmail">nirmaleshksk@sonatech.ac.in</a>           
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <h3 style="font-size: 20px;text-decoration: underline;"><center>Co-Investigator</center></h3>
+                      <img src="assets/img/team/img4.png" class="testimonial-img" alt="">
+                      <h3>Dr. K. C. Rajheshwari</h3>
+                      <h4>Associate Professor of Computer Science and Enginnering</h4>
+                      <h4>Sona college of Technology, Salem</h4>
+                      <p>
+                        <i class="bi-phone">+91-427-4099744, +91-427-4099888</i>
+                          <br>   
+                        <i class="bi-mailbox2"></i>
+                        <a href="mailto:rajeswarikc@sonatech.ac.in" class="staffmail">rajeswarikc@sonatech.ac.in</a>           
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <h3 style="font-size: 20px;text-decoration: underline;"><center>Co-Investigator</center></h3>
+                      <img src="assets/img/team/img5.png" class="testimonial-img" alt="">
+                      <h3>Dr. G. Madhupriya</h3>
+                      <h4>Assistant Professor of Computer Science and Enginnering</h4>
+                      <h4>Sona college of Technology, Salem</h4>
+                      <p>
+                        <i class="bi-phone">+91-427-4099744, +91-427-4099888</i>
+                          <br>   
+                        <i class="bi-mailbox2"></i>
+                        <a href="mailto:madhupriya@sonatech.ac.in" class="staffmail">madhupriya@sonatech.ac.in</a>           
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <h3 style="font-size: 20px;text-decoration: underline;"><center>Co-Investigator</center></h3>
+                      <img src="assets/img/team/img6.png" class="testimonial-img" alt="">
+                      <h3>T K Revathi</h3>
+                      <h4>Assistant Professor of Computer Science and Enginnering</h4>
+                      <h4>Sona college of Technology, Salem</h4>
+                      <p>
+                        <i class="bi-phone">+91-427-4099744, +91-427-4099888</i>
+                          <br>   
+                        <i class="bi-mailbox2"></i>
+                        <a href="mailto:revathi.tk@sonatech.ac.in" class="staffmail">revathi.tk@sonatech.ac.in</a>           
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <h3 style="font-size: 20px;text-decoration: underline;"><center>Co-Investigator</center></h3>
+                      <img src="assets/img/team/img7.png" class="testimonial-img" alt="">
+                      <h3>Dr. T. Maruthavanan</h3>
+                      <h4>Associate Professor of Chemistry Department</h4>
+                      <h4>Sona college of Technology, Salem</h4>
+                      <p>
+                        <i class="bi-phone">+91-427-4099744, +91-427-4099888</i>
+                          <br>   
+                        <i class="bi-mailbox2"></i>
+                        <a href="mailto:maruthavanan@sonatech.ac.in" class="staffmail">maruthavanan@sonatech.ac.in</a>           
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                <div class="swiper-slide">
+                  <div class="testimonial-wrap">
+                    <div class="testimonial-item">
+                      <h3 style="font-size: 20px;text-decoration: underline;"><center>Co-Investigator</center></h3>
+                      <img src="assets/img/team/img8.png" class="testimonial-img" alt="">
+                      <h3>Mr P Raghupathy</h3>
+                      <h4>Project Director</h4>
+                      <h4>Department of Centre For Social Responsibility Initiatives</h4>
+                      <h4>Sona college of Technology, Salem</h4>
+                      <p>
+                        <i class="bi-phone">+91-427-4099744, +91-427-4099888</i>
+                          <br>   
+                        <i class="bi-mailbox2"></i>
+                        <a href="mailto:ragupathy.csri@sonatech.ac.in" class="staffmail">ragupathy.csri@sonatech.ac.in</a>           
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+    
+                
+    
+                
+    
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+    
+          </div>
+        </section><!-- End Team Section -->
+        <div> 
+        </div>
+      </div>
+    </section>
+    <div id="team" class="our-team-area area-padding" data-aos="zoom-in">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Our special Team</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-12 " >
+            <div class="single-team-member">
+              
+              <div class="team-content text-center">
+                <h4>Mr.S. Prabhu</h4>
+                <p>Project Associate I</p>
+                <a href="mailto:prabhu.sticse@sonatech.ac.in">prabhu.sticse@sonatech.ac.in</a>
+                
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              
+              <div class="team-content text-center">
+                <h4>Ms.S. Bhavithra</h4>
+                <p>Project Associate I</p>
+                <a href="mailto:bhavthra.sticse@sonatech.ac.in">bhavthra.sticse@sonatech.ac.in</a>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              
+              <div class="team-content text-center">
+                <h4>Ms.S. Malarkodi</h4>
+                <p>Project Associate I</p>
+                <a href="mailto:malarkodi.sticse@sonatech.ac.in">malarkodi.sticse@sonatech.ac.in</a>
+                
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              
+              <div class="team-content text-center">
+                <h4>Ms.S.Harini Nivethaa</h4>
+                <p>Project Associate I</p>
+                <a href="mailto:harini.sticse@sonatech.ac.in">harini.sticse@sonatech.ac.in</a>
+                
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              
+              <div class="team-content text-center">
+                <h4>Mr.K. Balaji</h4>
+                <p>Project Associate I</p>
+                <a href="mailto:balaji.sticse@sonatech.ac.in">balaji.sticse@sonatech.ac.in</a>
+                
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              
+              <div class="team-content text-center">
+                <h4>Mr.P. Balamurugan</h4>
+                <p>Scientific Administrative Assistant</p>
+                <a href="mailto:balamurugan.sticse@sonatech.ac.in">balamurugan.sticse@sonatech.ac.in</a>
+            
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              
+              <div class="team-content text-center">
+                <h4>Mr.S. Tamilselvan</h4>
+                <p>Scientific Administrative Assistant</p>
+                <a href="mailto:tamilselvan.sticse@sonatech.ac.in">tamilselvan.sticse@sonatech.ac.in</a>
+                
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-team-member">
+              
+              <div class="team-content text-center">
+                <h4>Mr.N.Nishanthan</h4>
+                <p>Scientific Administrative Assistant</p>
+                <a href="mailto:nishanthan.sticse@sonatech.ac.in">nishanthan.sticse@sonatech.ac.in</a>
+              </div>
+            </div>
+          </div>
+          <!-- End column -->
+          
+        </div>
+      </div>
+    </div>
+   
+
+    <!-- ======= Contact Section ======= -->
+    <section  class="contact">
+     
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+  <section id="eventexpand" class="team" style="display: none;">
+    <section id="eventgallery" class="eventgallery">
+      <div class="container" data-aos="fade-up" >
+    
+        <div class="section-title" >
+          <h2>Gallery</h2>
+        </div>
+    
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="eventgallery-flters">
+              <li data-filter="*" class="filter-active" id="allimgbtn">All</li>
+              <li data-filter=".filter-app">Image</li>
+              <li data-filter=".filter-card">Video</li>
+            </ul>
+          </div>
+        </div>
+        
+        
+    
+        <div class="row eventgallery-container" data-aos="fade-up" data-aos-delay="200" id="galleryevent">
+    
+         
+    
+    
+        </div>
+    
+      </div>
+    </section>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer id="contact" >
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <center><h2>Science Technology and Innovation </h2></center>
+                  
+                </div>
+
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/sona.dst.sti/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <center>
+              <div class="footer-head">
+                
+                  <h5>SONA COLLEGE OF TECHNOLOGY</h5>
+                <h6>Junction Main Road,</h6>
+                <h6>Salem - 636 005,</h6>
+                <h6>Tamil Nadu, India.</h6>
+              
+                <div class="footer-contacts">
+                  
+                  <p><span>Email:</span> <a href="mailto:dststihub@sonatech.ac.in" style="color: white;text-decoration: underline;">dststihub@sonatech.ac.in</a></p>
+                </div>
+              </div>
+            </center>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4">
+            <div class="footer-content">
+              <div class="footer-head">
+                
+                <div class="footerimg">
+                  <h4>College</h4>
+                  <center><a href="#"><img src="assets/img/footer/college.jpeg" alt=""></a>
+                    <a href="#"><img src="assets/img/footer/college2.jpg" alt=""></a></center>
+                  
+                
+                </div>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area-bottom">
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
