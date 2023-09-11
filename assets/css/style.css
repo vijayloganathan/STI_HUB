@@ -2042,3 +2042,58 @@ hr {
     height: 40vh;
   }
 }
+
+#hero{
+  font-size: 20px;
+}
+
+
+@media (max-width: 900px){
+  .topbar h2{
+    display: none;
+  }
+  .contact-info img{
+    height: 70px;
+    width: 130px;
+    margin: 5px;
+  }
+  #hero{
+    font-size: 22px;
+  }
+}
+@media (max-width: 400px){
+  .topbar h2{
+    display: none;
+  }
+    .contact-info img{
+    height: 70px;
+    width: 130px;
+    margin: 5px;
+  }
+
+}
+
+.topbarcontent{
+  font-size: 18px;
+}
+
+
+@media (max-width: 800px){
+  #navbar-one h3{
+    display: none;
+  }
+  #navbar-one img{
+    width: 130px;
+    height: 50px;
+  }
+
+}
+@media (max-width: 400px){
+  #navbar-one h3{
+    display: none;
+  }
+  #navbar-one img{
+    width: 130px;
+    height: 50px;
+  }
+}
