@@ -179,10 +179,29 @@ eventCarouselItems.forEach((item, index) => {
   let preloader = select('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
-      preloader.remove()
+      homeimgdis();
+      checkForOfflineMessage();
+      
     });
   }
 
+  function checkForOfflineMessage() {
+    if (window.console) {
+      var oldLog = console.log;
+      console.log("start")
+      console.log = function (message) {
+        oldLog.apply(console, arguments);
+        if (message && message.toLowerCase() === "client offline") {
+          // Reload the page when the "client offline" message is logged
+          location.reload();
+        }
+        else{
+          preloader.remove()
+        }
+      };
+    }
+  }
+  
   /**
    * Clients Slider
    */
