@@ -1732,6 +1732,10 @@ hr {
   height: 50vh; /* Maintain the image's aspect ratio */
   display: block; /* Remove any potential inline-block spacing */
   border-radius: 20%;
+  margin-top: 25%;
+
+  
+
 }
 
 @media screen and (max-width: 568px) {
