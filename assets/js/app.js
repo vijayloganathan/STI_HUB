@@ -89,47 +89,48 @@ eventplan.insertAdjacentHTML('beforeend', plaintext);
                 `;
 
                 eventplan.insertAdjacentHTML('beforeend', eventMsg);
+              }
+            }
+          });
+        }
+      }
+      // Populate the "yearplan" list
+      if (yearplanData) {
+        const yearplanIndexArray = Object.keys(yearplanData);
 
-                // Populate the "yearplan" list
-                if (yearplanData) {
-                  const yearplanIndexArray = Object.keys(yearplanData);
+        for (let j = 0; j < yearplanIndexArray.length; j++) {
+          const yearplanId = yearplanIndexArray[j];
+          dbRef.child("yearplan").child(yearplanId).get().then(snapshot => {
+            if (snapshot.exists()) {
+              const yearplanData = snapshot.val();
+              const yearplanName = yearplanData.name;
+              const yearplanUrl = yearplanData.planPDFURL;
+              const yearplanListItem = `<li><a href="${yearplanUrl}">${yearplanName}</a></li>`;
+              yearplanList.push(yearplanListItem);
 
-                  for (let j = 0; j < yearplanIndexArray.length; j++) {
-                    const yearplanId = yearplanIndexArray[j];
-                    dbRef.child("yearplan").child(yearplanId).get().then(snapshot => {
-                      if (snapshot.exists()) {
-                        const yearplanData = snapshot.val();
-                        const yearplanName = yearplanData.name;
-                        const yearplanUrl = yearplanData.planPDFURL;
-                        const yearplanListItem = `<li><a href="${yearplanUrl}">${yearplanName}</a></li>`;
-                        yearplanList.push(yearplanListItem);
+              if (j < yearplanIndexArray.length - 1) {
+                // If there's another item after this one, add a horizontal line
+                yearplanList.push("<hr>");
+              }
 
-                        if (j < yearplanIndexArray.length - 1) {
-                          // If there's another item after this one, add a horizontal line
-                          yearplanList.push("<hr>");
-                        }
+              if (j === yearplanIndexArray.length - 1) {
+                // Insert the list into the message
+                let yearplanMsg = `
+                  <div class="col-xl-4 col-md-4">
+                    <div class="icon-box iconlist">
+                      <h4 style="font-style: italic;font-weight: bold;">YearPlan</h4>
+                      <div class="scrolling-list">
+                      
+                        <ul>
+                        <li><a href="https://www.indiablooms.com/life-details/E/7490/sona-college-to-drive-government-s-s-t-initiatives-in-2-salem-blocks.html">INDIA BLOOMS</a></li><hr>
+                          ${yearplanList.join('')} <!-- List of yearplan goes here -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                `;
 
-                        if (j === yearplanIndexArray.length - 1) {
-                          // Insert the list into the message
-                          let yearplanMsg = `
-                            <div class="col-xl-4 col-md-4">
-                              <div class="icon-box iconlist">
-                                <h4 style="font-style: italic;font-weight: bold;">YearPlan</h4>
-                                <div class="scrolling-list">
-                                  <ul>
-                                    ${yearplanList.join('')} <!-- List of yearplan goes here -->
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          `;
-
-                          eventplan.insertAdjacentHTML('beforeend', yearplanMsg);
-                        }
-                      }
-                    });
-                  }
-                }
+                eventplan.insertAdjacentHTML('beforeend', yearplanMsg);
               }
             }
           });
@@ -202,7 +203,7 @@ function homeimgdis() {
   })
   
 }
-homeimgdis();
+
 
 // ==========================================================================================================
 
