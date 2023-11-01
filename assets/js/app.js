@@ -122,7 +122,7 @@ eventplan.insertAdjacentHTML('beforeend', plaintext);
                       <div class="scrolling-list">
                       
                         <ul>
-                        <li><a href="https://www.indiablooms.com/life-details/E/7490/sona-college-to-drive-government-s-s-t-initiatives-in-2-salem-blocks.html">INDIA BLOOMS</a></li><hr>
+                        <li><a href="https://www.indiablooms.com/life-details/E/7490/sona-college-to-drive-government-s-s-t-initiatives-in-2-salem-blocks.html">Sona Group of Institute</a></li><hr>
                           ${yearplanList.join('')} <!-- List of yearplan goes here -->
                         </ul>
                       </div>
