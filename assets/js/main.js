@@ -192,6 +192,7 @@ eventCarouselItems.forEach((item, index) => {
         oldLog.apply(console, arguments);
         if (message && message.toLowerCase() === "client offline") {
           // Reload the page when the "client offline" message is logged
+           console.log("reload")
           location.reload();
         }
         else{
