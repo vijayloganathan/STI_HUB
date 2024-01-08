@@ -172,14 +172,16 @@ eventCarouselItems.forEach((item, index) => {
     }
   });
   
- /**
+
+  /**
    * Preloader
    */
   let preloader = select('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
       homeimgdis();
-      checkForOfflineMessage();
+      preloader.remove()
+      fetchDataFromFirebase()
       
     });
   }
@@ -191,18 +193,17 @@ eventCarouselItems.forEach((item, index) => {
       console.log = function (message) {
         oldLog.apply(console, arguments);
         if (message && message.toLowerCase() === "client offline") {
+          console.log("reload")
           // Reload the page when the "client offline" message is logged
-           console.log("reload")
           location.reload();
         }
         else{
           preloader.remove()
+          fetchDataFromFirebase()
         }
       };
     }
   }
- 
-   
   
   /**
    * Clients Slider
