@@ -268,7 +268,7 @@ function displayimggall(fileList) {
       if (file.fileType === 'image') {
         // Display an image
         msg = `
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 portfolio-item filter-app" style="display:inline">
             <div class="portfolio-wrap">
               <img src="${file.downloadURL}" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -282,7 +282,7 @@ function displayimggall(fileList) {
       } else if (file.fileType === 'video') {
         // Display a video
         msg = `
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <video controls>
                 <source src="${file.downloadURL}" type="video/mp4">
@@ -371,20 +371,20 @@ function fetchEventData() {
             <div class="carousel-item ${isActive}">
             <div class="container" style="background-color: white; display: flex; justify-content: center; align-items: center;">
               <div class="row">
-              <div class="col-lg-6 col-md-10">
+              <div class="col-lg-6 col-md-10" style="display:inline">
                 <center><img src="${url[0]}" class="eventimg"></center>
               </div>
               <div class="col-lg-6 col-md-8">
-                <center><h3>${title}</h3></center>
+                <center><h3 class="eventhead" style="font-size:20px">${title}</h3></center>
                 <div class="event-con">
                   <i class="bi bi-geo-alt-fill event-icon ci"></i>
-                  <p class="event-text">${place}</p>
+                  <p class="event-text" style="font-size:20px">${place}</p>
                 </div>
                 <div class="event-con">
                   <i class="bi bi-calendar-date event-icon ci"></i>
-                  <p class="event-text">${date}</p>
+                  <p class="event-text" style="font-size:20px">${date}</p>
                 </div>  
-                <p>${content}</p>
+                <p class="eventdetaildisplay">${content}</p>
                 <center><a href="#" class="btn-get-started scrollto animate__animated animate__fadeInUp" onclick="eventdatapass('${id}')">Get Started</a></center>
               <br>
               </div>
@@ -477,7 +477,7 @@ function initializeGalleryFilter() {
 function dis(galleryItems) {
   galleryItems.forEach((item) => {
     const galleryItemDiv = document.createElement('div');
-    galleryItemDiv.className = 'col-lg-4 col-md-6 eventgallery-item filter-' + (item.type === 'video' ? 'card' : 'app');
+    galleryItemDiv.className = 'col-lg-3 col-md-6 eventgallery-item filter-' + (item.type === 'video' ? 'card' : 'app');
   
     const galleryItemWrapDiv = document.createElement('div');
     galleryItemWrapDiv.className = 'eventgallery-wrap';
@@ -656,11 +656,12 @@ function intervisionselect(data,i)
                     <div class="row gy-4">
                       <div class="col-lg-12 details order-2 order-lg-1">
                         <h3>${title}</h3>
-                        <div id="intervisionpoint${i}">
-                        </div>
                         <div class="col-lg-12 text-center order-1 order-lg-2" data-aos="fade-up">
                         <center><img src="${url}" alt="" class="img-fluid"></center>
                       </div>
+                        <div id="intervisionpoint${i}">
+                        </div>
+                       
                         </div>
                     </div>
                   </div>
@@ -673,7 +674,7 @@ function intervisionselect(data,i)
   for(var j=0;j<points.length;j++)
   {
     const msgp=`
-    <p>${points[j]}</p>
+    <p><i class="ri-check-double-line" style="color:#ffc451"></i> ${points[j]}</p>
     `
     pointsdis.insertAdjacentHTML('beforeend', msgp);
   }
