@@ -536,7 +536,7 @@ section {
 
 .section-title h2::after {
   content: "";
-  width: 150px;
+  width: 130px;
   height: 2px;
   display: inline-block;
   background: #ffde9e;
