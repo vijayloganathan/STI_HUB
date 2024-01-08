@@ -180,7 +180,7 @@ eventCarouselItems.forEach((item, index) => {
   if (preloader) {
     window.addEventListener('load', () => {
       homeimgdis();
-      checkForOfflineMessage();
+      preloader.remove()
       
     });
   }
