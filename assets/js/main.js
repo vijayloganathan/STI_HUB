@@ -192,8 +192,7 @@ eventCarouselItems.forEach((item, index) => {
       console.log = function (message) {
         oldLog.apply(console, arguments);
         if (message && message.toLowerCase() === "client offline") {
-          // Reload the page when the "client offline" message is logged
-          location.reload();
+          alert("There is an Network error, Please check Your Internet and try Again or Reload the Page")
         }
         else{
           preloader.remove()
