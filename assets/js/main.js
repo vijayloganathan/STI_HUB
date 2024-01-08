@@ -172,15 +172,14 @@ eventCarouselItems.forEach((item, index) => {
     }
   });
   
-
-  /**
+ /**
    * Preloader
    */
   let preloader = select('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
       homeimgdis();
-      preloader.remove()
+      checkForOfflineMessage();
       
     });
   }
@@ -192,7 +191,8 @@ eventCarouselItems.forEach((item, index) => {
       console.log = function (message) {
         oldLog.apply(console, arguments);
         if (message && message.toLowerCase() === "client offline") {
-          alert("There is an Network error, Please check Your Internet and try Again or Reload the Page")
+          // Reload the page when the "client offline" message is logged
+          location.reload();
         }
         else{
           preloader.remove()
@@ -200,6 +200,8 @@ eventCarouselItems.forEach((item, index) => {
       };
     }
   }
+ 
+   
   
   /**
    * Clients Slider
