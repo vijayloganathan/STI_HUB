@@ -180,8 +180,7 @@ eventCarouselItems.forEach((item, index) => {
   if (preloader) {
     window.addEventListener('load', () => {
       homeimgdis();
-      preloader.remove()
-      fetchDataFromFirebase()
+      checkForOfflineMessage();
       
     });
   }
@@ -193,13 +192,11 @@ eventCarouselItems.forEach((item, index) => {
       console.log = function (message) {
         oldLog.apply(console, arguments);
         if (message && message.toLowerCase() === "client offline") {
-          console.log("reload")
           // Reload the page when the "client offline" message is logged
           location.reload();
         }
         else{
           preloader.remove()
-          fetchDataFromFirebase()
         }
       };
     }
