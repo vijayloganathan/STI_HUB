@@ -26,8 +26,7 @@ function yearplandisplay() {
 
   let plaintext = `
   <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-                <div class="col-xl-8 col-lg-8">
-                    <center><h3>Science Technology and Innovation Hub for livelihood enhancement of SC community in Omalur and Kadayampatti Blocks, Salem District, TamilNadu.</h3></center>
+                <div class="col-xl-8 col-lg-8" style="width:100vw">
                 </div>
             </div>
 `;
