@@ -371,10 +371,10 @@ function fetchEventData() {
             <div class="carousel-item ${isActive}">
             <div class="container" style="background-color: white; display: flex; justify-content: center; align-items: center;">
               <div class="row">
-              <div class="col-lg-6 col-md-10" style="display:inline">
+              <div class="col-lg-12 col-md-12" style="display:inline">
                 <center><img src="${url[0]}" class="eventimg"></center>
               </div>
-              <div class="col-lg-6 col-md-8">
+              <div class="col-12">
                 <center><h3 class="eventhead" style="font-size:20px">${title}</h3></center>
                 <div class="event-con">
                   <i class="bi bi-geo-alt-fill event-icon ci"></i>
